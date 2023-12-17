@@ -11,6 +11,13 @@
   box-shadow: 0px 0px 1px 1px ;
   animation: shadowAnimation2 60s normal infinite;
 }
+
+.overlayText{
+
+  text-shadow: 3px 3px 3px 3px rgba(22, 122, 222, 0.7);
+  animation: softColorChange 3s ease-in-out none ;
+
+}
 .overlaySoft{
   
   animation: softColorChange 5s ease-in-out infinite alternate;
@@ -119,3 +126,32 @@ li:hover {
   color:white;
 transition: 0.3s ease-in-out;
 }
+
+
+ @keyframes shadowAnimation {
+      0% {
+        color: rgba(20, 120, 220, 1);
+      }
+      25% {
+        color: rgba(220, 20, 120, 1);
+      }
+      50% {
+        color: rgba(120, 220, 20, 1);
+      }
+      75% {
+        color: rgba(20, 120, 220, 1);
+      }
+      100% {
+        color: rgba(220, 20, 120, 1);
+      }
+    }
+
+    .textContainer {
+      display: inline-block;
+      font-size: 3em;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shadowAnimation 35s infinite;
+    }
