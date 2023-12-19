@@ -8,7 +8,7 @@ import { LinearGradient } from "react-text-gradients";
 
 export const Header = () => {
   return (
-    <div className=" h-40 flex  flex-row-reverse py-5 pl-25 px-20 mx-20  ">
+    <div className=" h-40 flex bg-black flex-row-reverse py-5 pl-25 px-10 mx-8  ">
       <div className="flex h-full flex-row pr-10  items-center">
         <ul className="flex flex-row gap-4 pt-6 mr-10 justify-center items-center">
           <li >
@@ -75,6 +75,9 @@ export const Header = () => {
           </li>
           <li>
             <a href="#contacts">Contacts</a>
+          </li>
+          <li >
+            <a href="#more">More</a>
           </li>
         </ul>
       </div>

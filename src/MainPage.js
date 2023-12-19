@@ -27,7 +27,10 @@ import "./App.css";
 import card from "./components/EnglishCard";
 import MoreAbout from "./MoreAbout";
 import { Header } from "./components/Header";
+import { MainContext,useContext  } from "./components/context";
 export default function MainPage() {
+
+  
   return (
     <div
       style={{
@@ -38,7 +41,7 @@ export default function MainPage() {
       className="w-full h-screen justify-center items-center "
     >
       <Header />
-      
+
       <div className="container w-full h-2/4 mt-20 mx-auto flex  justify-evenly">
         <div
           style={{ color: colors.dark.secondary, fontFamily: "Poppins" }}
@@ -370,12 +373,12 @@ export default function MainPage() {
           </h2>
         </div>
 
-        <div className="flex flex-row w-full h-screen justify-center gap-4 mx-auto">
+        <div className="flex flex-row w-full h-screen  justify-center gap-4 mx-auto">
           <div
             style={{
               boxShadow: "0px 5px 6px 1px rgba(222,222,222,0.7)",
             }}
-            className="w-1/5  flex flex-col bg-white h-3/5 rounded-3xl overflow-hidden  "
+            className="w-1/5 cursor-pointer flex flex-col bg-white h-3/5 rounded-3xl overflow-hidden  "
           >
             <div className="w-full h-80 bg-black">
               <img
@@ -390,14 +393,20 @@ export default function MainPage() {
             </div>
             <div
               style={{ backgroundColor: colors.dark.gray }}
-              className="w-full p-3 h-full justify-center items-center text-center "
+              className="w-full p-3 h-full justify-center  items-center text-center "
             >
-              <h1 style={{ color: "black" }} className="pt-4 text-2xl">
+              <h1
+                style={{ color: "black" }}
+                className="pt-4 cursor-pointer text-2xl"
+              >
                 {" "}
                 Fenne Design
               </h1>{" "}
               <br />
-              <h2 style={{ color: colors.dark.primary }}>
+              <h2
+                className="cursor-pointer"
+                style={{ color: colors.dark.primary }}
+              >
                 I developed the Fenne Design application with React Native. In
                 this project, I made an e-commerce application for a company
                 that produces marble products, trays and accessories. The
@@ -412,7 +421,7 @@ export default function MainPage() {
             }}
             className="w-1/5 flex flex-col bg-white h-3/5 rounded-3xl overflow-hidden "
           >
-            <div className="w-full h-80 bg-black">
+            <div className="w-full h-80 cursor-pointer bg-black">
               <img
                 src={bg5}
                 alt=""
@@ -425,14 +434,20 @@ export default function MainPage() {
             </div>
             <div
               style={{ backgroundColor: colors.dark.gray }}
-              className="w-full p-3 h-full justify-center items-center text-center"
+              className="w-full cursor-pointer p-3 h-full justify-center items-center text-center"
             >
-              <h1 style={{ color: "black" }} className="pt-4 text-2xl">
+              <h1
+                style={{ color: "black" }}
+                className="pt-4 cursor-pointer text-2xl"
+              >
                 {" "}
                 SociApp
               </h1>{" "}
               <br />
-              <h2 style={{ color: colors.dark.primary, fontSize: "17px" }}>
+              <h2
+                className="cursor-pointer"
+                style={{ color: colors.dark.primary, fontSize: "17px" }}
+              >
                 I developed the social app with react native. With SocialApp, a
                 social media application, you can share posts and articles and
                 follow up with your friends.{" "}
@@ -443,9 +458,9 @@ export default function MainPage() {
             style={{
               boxShadow: "0px 5px 6px 1px rgba(222,222,122,0.7)",
             }}
-            className="w-1/5 flex flex-col bg-white h-3/5 rounded-3xl overflow-hidden "
+            className="w-1/5 flex flex-col bg-white h-3/5 rounded-3xl cursor-pointer overflow-hidden "
           >
-            <div className="w-full h-80 bg-black">
+            <div className="w-full cursor-pointer h-80 bg-black">
               <img
                 src={bg4}
                 alt=""
@@ -460,12 +475,18 @@ export default function MainPage() {
               style={{ backgroundColor: colors.dark.gray }}
               className="w-full p-3 h-full justify-center items-center text-center"
             >
-              <h1 style={{ color: "black" }} className="pt-4 text-2xl">
+              <h1
+                style={{ color: "black" }}
+                className="pt-4 cursor-pointer text-2xl"
+              >
                 {" "}
                 Motivation App
               </h1>{" "}
               <br />
-              <h2 style={{ color: colors.dark.primary, fontSize: "17px" }}>
+              <h2
+                className="cursor-pointer"
+                style={{ color: colors.dark.primary, fontSize: "17px" }}
+              >
                 I developed the Motivation App with react native. Thanks to this
                 application, you can read motivational words according to your
                 mood.{" "}
@@ -476,9 +497,9 @@ export default function MainPage() {
             style={{
               boxShadow: "0px 5px 6px 1px rgba(12,222,92,0.5)",
             }}
-            className="w-1/5 flex flex-col bg-white h-3/5 rounded-3xl overflow-hidden  "
+            className="w-1/5 flex flex-col bg-white cursor-pointer h-3/5 rounded-3xl overflow-hidden  "
           >
-            <div className="w-full h-80 bg-black">
+            <div className="w-full cursor-pointer h-80 bg-black">
               <img
                 src={bg3}
                 alt=""
@@ -491,14 +512,20 @@ export default function MainPage() {
             </div>
             <div
               style={{ backgroundColor: colors.dark.gray }}
-              className="w-full p-3 h-full justify-center items-center text-center"
+              className="w-full p-3 cursor-pointer h-full justify-center items-center text-center"
             >
-              <h1 style={{ color: "black" }} className="pt-4 text-2xl">
+              <h1
+                style={{ color: "black" }}
+                className="pt-4 cursor-pointer text-2xl"
+              >
                 {" "}
                 Weather WebPage
               </h1>{" "}
               <br />
-              <h2 style={{ color: colors.dark.primary, fontSize: "17px" }}>
+              <h2
+                className="cursor-pointer"
+                style={{ color: colors.dark.primary, fontSize: "17px" }}
+              >
                 Developed the weather website with React Js. Thanks to this
                 page, you can instantly follow the weather conditions based on
                 your location information.{" "}
