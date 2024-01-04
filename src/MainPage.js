@@ -605,6 +605,7 @@ export default function MainPage() {
           }}
           className="mx-auto"
         ></div>
+        
       </div>
       <div
         style={{ color: colors.dark.primary }}

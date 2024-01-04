@@ -4,7 +4,7 @@ export const CategoriComponent = () => {
   return (
     <div style={{
       color:colors.dark.secondary
-    }} className="w-4/5 text-xl font-DMSans  h-44 mx-auto p-5 px-5 justify-between items-center flex flex-row bg-slate-700 border-1 mt-5 ">
+    }} className="w-4/5 text-xl font-DMSans  h-20 mx-auto p-5 px-5 justify-between items-center flex flex-row bg-slate-700 border-1 mt-5 ">
       <div className="flex flex-row gap-5">
         <div>
           <h1>Categories</h1>

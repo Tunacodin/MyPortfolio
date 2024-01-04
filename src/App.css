@@ -155,3 +155,50 @@ transition: 0.3s ease-in-out;
       color: transparent;
       animation: shadowAnimation 35s infinite;
     }
+/* Stil dosyası - Örnek olarak CardComponent.css adında bir dosya düşünelim */
+
+/* Stil dosyası - Örnek olarak CardComponent.css adında bir dosya düşünelim */
+
+.cardContainer {
+  position: relative;
+  cursor: pointer;
+    opacity:1;
+    border-radius:1rem ;
+
+
+}
+.cardContainer:hover {
+
+  opacity:1;
+    transition: bottom 0.5s ease-in-out;
+    box-shadow: rgba(255, 254, 255, 0.9);
+    
+    /* Transform properties*/
+
+
+}
+
+.cardText {
+  cursor: pointer;
+  position: absolute;
+  bottom: -15rem; /* Başlangıçta tamamen gizlenmiş olacak */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s ease-in-out;
+  opacity: 0;
+    text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cardContainer:hover .cardText {
+  background-color:rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  opacity: 1;
+  bottom: 0rem; /* Hover olduğunda metin yukarı doğru çıkacak */
+  text-align: center;
+padding-top:50%;
+border-radius:1rem ;
+  
+}
