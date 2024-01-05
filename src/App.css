@@ -153,7 +153,7 @@ transition: 0.3s ease-in-out;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      animation: shadowAnimation 35s infinite;
+      animation: shadowAnimation 25s infinite;
     }
 /* Stil dosyası - Örnek olarak CardComponent.css adında bir dosya düşünelim */
 
@@ -184,7 +184,7 @@ transition: 0.3s ease-in-out;
   bottom: -15rem; /* Başlangıçta tamamen gizlenmiş olacak */
   left: 50%;
   transform: translateX(-50%);
-  transition: bottom 1s ease-in-out;
+  transition: bottom 1.2s ease-in-out;
   opacity: 0;
     text-align: center;
   justify-content: center;
