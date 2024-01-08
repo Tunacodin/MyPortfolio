@@ -12,10 +12,11 @@ export const BlogCard2 = ({data}) => {
         overflow: "hidden",
         boxShadow: "0px 1px 15px 5px rgba(55, 140, 210, .4)",
       }}
-      className="cardContainer"
+      className="cardContainer flex flex-col "
     >
+      <div className="w-full h-4 bg-black"></div>
       <div className="  w-full h-full   ">
-        <h1 className="cardText text-5xl  text-center w-full h-full font-DMSans">
+        <h1 className="cardText text-5xl text-white  text-center w-full h-full font-DMSans">
           {data.title}
           <br />
           <br />

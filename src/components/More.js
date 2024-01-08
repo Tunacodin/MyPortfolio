@@ -46,7 +46,7 @@ export const More = () => {
   };
   const sinematografiData = {
     bg: sinematografi,
-    title: "CINEMATOGRAPHY",
+    title: "CINEMA",
     text: "How Are The Movıes We Admire Made?",
     date: "07-08-2021",
   };
@@ -131,21 +131,25 @@ export const More = () => {
         </h1>
         <CategoriComponent />
 
-        <div className="w-full flex bg-black flex-col justify-center items-center ">
-          <div style={{}} className="w-4/5 p-5  px-10  justify-center gap-5 items-center shadow-2xl shadow-slate-00 flex flex-row ">
+        <div className="w-full h-full flex bg-black flex-col justify-center items-center relative ">
+       
+          <div
+          
+            className="w-4/5 p-5  px-10  justify-center gap-5 items-center shadow-2xl shadow-slate-00 flex flex-row "
+          >
             <BlogCard data={felsefeData} />
-            <BlogCard2 data={bilimData} />
+            <BlogCard data={bilimData} />
             <BlogCard data={interstellarData} />
             <BlogCard data={sinematografiData} />
           </div>
           <div className="w-4/5 p-5 px-10 justify-center gap-5 items-center shadow-2xl shadow-slate-00 flex flex-row ">
             <BlogCard data={kitapData} />
             <BlogCard data={tarihData} />
-            <BlogCard2 data={inancData} />
+            <BlogCard data={inancData} />
             <BlogCard data={reactNativeData} />
           </div>
           <div className="w-4/5 p-5  px-10   justify-center gap-5 items-center shadow-2xl shadow-slate-00 flex flex-row ">
-            <BlogCard2 data={mitolojiData} />
+            <BlogCard data={mitolojiData} />
             <BlogCard data={musicData} />
             <BlogCard data={hansZımmerData} />
             <BlogCard data={caosData} />
