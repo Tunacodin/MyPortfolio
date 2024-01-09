@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <MainContext.Provider value={data}>
-      <More/>
+      <MainPage/>
       
     </MainContext.Provider>
   );
