@@ -15,7 +15,7 @@ export const CategoriComponent = () => {
       </div>
       <div>
         <div className=''>
-          <h1>Views:  {}</h1>
+          <h1>Views: 212  {}</h1>
         </div>
       </div>
     </div>

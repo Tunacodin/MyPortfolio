@@ -10,7 +10,6 @@ import Cinema from "./components/Cinema";
 export default function Hobbies() {
   return (
     <div className="w-full h-full bg-black">
-      <Header />
       <div className="relative w-4/5 mx-auto h-full py-10 ">
         <div className="relative w-4/5 mx-auto h-full  ">
           <h1

@@ -11,12 +11,7 @@ import js from "./images/js.svg";
 import react from "./images/react.svg";
 import git from "./images/git-alt.svg";
 import twitter from "./images/twitter-6.svg";
-import x from "./images/x.png";
 import linkedin from "./images/linkedin-icon.svg";
-import product from "./images/ss.png";
-import product2 from "./images/ss2.png";
-import bg from "./images/bg2.jpg";
-import bg2 from "./images/bg3.jpg";
 import bg3 from "./images/bg4.jpg";
 import bg4 from "./images/bg5.jpg";
 import bg5 from "./images/bg6.jpg";
@@ -24,13 +19,8 @@ import bg6 from "./images/bg7.jpg";
 import bg7 from "./images/bg8.jpg";
 import { LinearGradient } from "react-text-gradients";
 import "./App.css";
-import card from "./components/EnglishCard";
-import MoreAbout from "./MoreAbout";
-import { Header } from "./components/Header";
-import { MainContext,useContext  } from "./components/context";
+import MoreAbout from "./Text";
 export default function MainPage() {
-
-  
   return (
     <div
       style={{
@@ -40,9 +30,7 @@ export default function MainPage() {
       }}
       className="w-full h-screen justify-center items-center "
     >
-      <Header />
-
-      <div className="container w-full h-2/4 mt-20 mx-auto flex  justify-evenly">
+      <div className="container w-full h-2/4  mx-auto flex  justify-evenly">
         <div
           style={{ color: colors.dark.secondary, fontFamily: "Poppins" }}
           className="p-10 w-3/5"
@@ -65,8 +53,8 @@ export default function MainPage() {
           <img
             src={profile}
             style={{
-              width: "360px",
-              height: "360px",
+              width: "365px",
+              height: "365px",
             }}
             className=" overlay rounded-full mt-10 shadow-2xl  "
           ></img>
@@ -94,7 +82,7 @@ export default function MainPage() {
             First of all Hello my webpage. Nice to see you here.. I am Tuna
             Bostancıbaşı and I am currently university student as a computer
             engineering student in Denizli, Turkey. I am 23 years old. I am
-            interest in and develop web and mobile.
+            develop web and mobile.
           </p>
         </div>
 
@@ -605,7 +593,6 @@ export default function MainPage() {
           }}
           className="mx-auto"
         ></div>
-        
       </div>
       <div
         style={{ color: colors.dark.primary }}

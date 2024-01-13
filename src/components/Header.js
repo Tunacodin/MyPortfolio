@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
 import x from "../images/x.png";
 import github from "../images/github-icon-2.svg";
 import linkedin from "../images/linkedin-icon.svg";
-import MoreAbout from "../MoreAbout";
+import MoreAbout from "../Text";
 import { LinearGradient } from "react-text-gradients";
-
+import ThemedButton from "./themeSwitcher";
 
 export const Header = () => {
+
+
+
   return (
-    <div className=" h-40 flex bg-black flex-row-reverse py-5 pl-25 px-10 mx-8  ">
+    <div className=" h-40 flex bg-black flex-row-reverse py-5 pl-25 px-20 ">
       <div className="flex h-full flex-row pr-10  items-center">
         <ul className="flex flex-row gap-4 pt-6 mr-10 justify-center items-center">
-          <li >
-            <a
-              href="https://github.com/Tunacodin">
+          <li>
+            <a href="https://github.com/Tunacodin">
               <img
                 src={github}
                 alt="github"
@@ -56,28 +58,16 @@ export const Header = () => {
       <div className="w-2/3 px-20 flex flex-row items-center">
         <ul
           style={{ color: colors.dark.primary }}
-          className="flex flex-row gap-20 items-center pt-5 text-xl font-DMSans"
+          className="flex flex-row pl-44 gap-20  pt-5 text-2xl font-DMSans"
         >
           <li>
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="/more">Blog</a>
           </li>
           <li>
-            <a href="#techstack">TechStack</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li onClick={MoreAbout}>
-            <a href="#hobbies">Hobbies</a>
-          </li>
-          <li>
-            <a href="#contacts">Contacts</a>
-          </li>
-          <li >
-            <a href="#more">More</a>
+            <a href="/hobbies">Hobbies</a>
           </li>
         </ul>
       </div>
@@ -110,8 +100,7 @@ export const Header = () => {
       </div>
     </div>
   );
-}
-
+};
 
 const colors = {
   dark: {
