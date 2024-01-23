@@ -6,6 +6,7 @@ import { MainContext } from "./components/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { ThemeProvider } from "./Hooks/useTheme";
+import Footer from "./components/Footer";
 
 const App = () => {
   useEffect(() => {
@@ -32,6 +33,7 @@ const App = () => {
 
             <Route path="/hobbies" element={<Hobbies />}></Route>
           </Routes>
+        
         </Router>
       </ThemeProvider>
     </MainContext.Provider>

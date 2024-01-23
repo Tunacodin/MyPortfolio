@@ -26,7 +26,7 @@ const colors = {
 
 const Footer = () => {
   return (
-    <div className='w-full h-full '>
+    <div className="w-full h-full ">
       <div
         id="contacts"
         className="w-full bg-black justify-between flex flex-row items-center px-40 p-10 mx-auto"

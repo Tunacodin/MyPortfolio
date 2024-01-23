@@ -28,20 +28,26 @@ export default function MainPage() {
         text: colors.dark.primary,
         fontFamily: "Poppins",
       }}
-      className="w-full h-screen justify-center items-center "
+      className="w-full h-screen md:pt-28  justify-center items-center "
     >
-      <div className="container w-full h-2/4  mx-auto flex  justify-evenly">
+      <div className="container grid grid-cols-1  w-full h-2/4  md:mx-auto md:flex md:flex-row-reverse  justify-evenly">
+        <div className="  items-center justify-center  rounded-full">
+          <img
+            src={profile}
+            style={{
+              width: "340px",
+              height: "340px",
+            }}
+            className="overlaySmall  md:overlay  mx-auto rounded-full mt-10 shadow-2xl  "
+          ></img>
+        </div>
         <div
           style={{ color: colors.dark.secondary, fontFamily: "Poppins" }}
-          className="p-10 w-3/5"
+          className="md:p-10text-2xl xl:text-6xl leading-10 md:mt-16 w-full md:w-3/5"
         >
-          <h1
-            style={{ lineHeight: "70px" }}
-            className="text-6xl font-semibold mt-10"
-          >
-            Hi!👋
-            <br /> My name is <br />{" "}
-            <span>
+          <h1 className="text-2xl xl:text-6xl md:leading-10 text-center md:text-start  font-semibold mt-10">
+            Hi!👋 My name is <br />{" "}
+            <span className="text-2xl md:text-6xl ">
               <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
                 Tuna Bostancıbaşı
               </LinearGradient>
@@ -49,26 +55,16 @@ export default function MainPage() {
             <br /> I build things <br /> for web and mobile
           </h1>
         </div>
-        <div className="  items-center justify-center  rounded-full">
-          <img
-            src={profile}
-            style={{
-              width: "365px",
-              height: "365px",
-            }}
-            className=" overlay rounded-full mt-10 shadow-2xl  "
-          ></img>
-        </div>
       </div>
 
       <div
         id="about"
-        className="w-full flex flex-col gap-10 justify-center items-start mt-56 pl-52  bg-black"
+        className="w-full text-center md:text-start  flex flex-col md:gap-10 justify-center item-center md:items-start mt-56 md:mt-56 md:pl-52  bg-black"
       >
-        <div className="w-3/5 h-full bg-black justify-center px-5">
+        <div className="md:w-3/5 h-full bg-black leading-10 justify-center px-5">
           <h1
             style={{ color: colors.dark.secondary }}
-            className="font-Poppins text-5xl font-semibold "
+            className="font-Poppins text-3xl md:text-5xl font-semibold "
           >
             ABOUT ME
           </h1>
@@ -77,12 +73,12 @@ export default function MainPage() {
             style={{
               color: colors.dark.thirth,
             }}
-            className="w-full font-Poppins text-2xl my-5"
+            className="w-full font-Poppins we text-xl md:text-2xl my-5"
           >
-            First of all Hello my webpage. Nice to see you here.. I am Tuna
-            Bostancıbaşı and I am currently university student as a computer
-            engineering student in Denizli, Turkey. I am 23 years old. I am
-            develop web and mobile.
+            First of all Hello my webpage. Nice to see you here.. <br />I am
+            Tuna Bostancıbaşı and I am currently university student as a
+            computer engineering student in Denizli, Turkey. I am 23 years old.
+            I am develop web and mobile.
           </p>
         </div>
 
@@ -90,20 +86,22 @@ export default function MainPage() {
           style={{
             color: colors.dark.secondary,
           }}
-          className="w-3/5 h-full  bg-black justify-center px-5"
+          className="w-full md:w-3/5 h-full  bg-black justify-center px-5"
         >
           <h1
             style={{ color: colors.dark.secondary }}
-            className=" font-Poppins text-5xl font-semibold py-10 "
+            className=" font-Poppins text-3xl md:text-5xl font-semibold py-10 "
           >
             WORK EXPERIENCE
           </h1>
 
-          <div className="w-full h-full gap-2">
+          <div className="w-full h-full gap-2 text-start">
             <div className="w-full h-full justify-between flex flex-row items-center font-Poppins">
               <div className="gap-2 flex flex-col ">
-                <h2 className="text-xl">React-Native Course</h2>
-                <h3 className="text-lg text-slate-300">-Denizli / Turkey</h3>
+                <h2 className="text-md md:text-xl">React-Native Course</h2>
+                <h3 className="text-md md:text-lg text-slate-300">
+                  -Denizli / Turkey
+                </h3>
               </div>
 
               <div className="gap-2 flex my-5 flex-col ">
@@ -113,7 +111,7 @@ export default function MainPage() {
                     backgroundColor: colors.dark.successbg,
                     textAlign: "center",
                   }}
-                  className="rounded-3xl p-2"
+                  className="rounded-3xl p-2 text-md md:text-lg"
                 >
                   Internship
                 </h2>
@@ -128,8 +126,10 @@ export default function MainPage() {
 
             <div className="w-full h-full justify-between flex flex-row items-center font-Poppins">
               <div className="gap-2 flex flex-col ">
-                <h2 className="text-xl">ReactJS</h2>
-                <h3 className="text-lg text-slate-300">-Denizli / Turkey</h3>
+                <h2 className="text-lg md:text-xl">ReactJS</h2>
+                <h3 className="text-md md:text-lg text-slate-300">
+                  -Denizli / Turkey
+                </h3>
               </div>
 
               <div className="gap-2 flex flex-col ">
@@ -152,9 +152,9 @@ export default function MainPage() {
             ></div>
 
             <div className="w-full h-full justify-between flex flex-row items-center font-Poppins">
-              <div className="gap-2 flex flex-col ">
-                <h2 className="text-xl">HTML/CSS/JAVASCRIPT</h2>
-                <h3 className="text-lg text-slate-300">
+              <div className="gap-2 flex flex-col  ">
+                <h2 className="text-md md:text-xl">HTML/CSS/JAVASCRIPT</h2>
+                <h3 className="text-md md:text-lg text-slate-300">
                   -Pamukkale University / Denizli
                 </h3>
               </div>
@@ -180,26 +180,30 @@ export default function MainPage() {
           </div>
         </div>
 
-        <div className="w-3/5 h-full bg-black justify-center px-5">
+        <div className="w-full md:w-3/5 h-full bg-black justify-center px-5">
           <div className="w-full">
             <h1
               style={{ color: colors.dark.secondary }}
-              className="font-Poppins text-5xl font-semibold "
+              className="font-Poppins text-3xl  md:text-5xl font-semibold "
             >
               EDUCATION
             </h1>
           </div>
           <br />
-          <div className="w-full h-full justify-between flex flex-row items-center font-Poppins">
+          <div className="w-full h-full justify-between flex flex-row items-center ">
             <div
               style={{ color: colors.dark.secondary }}
-              className="gap-2 flex flex-col  "
+              className="gap-2 flex flex-col text-start "
             >
-              <h2 className="text-xl">Yenişehir Anatolian HighSchool</h2>
-              <h3 className="text-lg text-slate-300">-Sivas/Turkey</h3>
+              <h2 className="text-md md:text-lg">
+                Yenişehir Anatolian HighSchool
+              </h2>
+              <h3 className="text-md md:text-lg text-slate-300">
+                -Sivas/Turkey
+              </h3>
             </div>
 
-            <div className="gap-2 flex my-5 flex-col ">
+            <div className="gap-2 flex my-5 flex-col text-start justify-between ">
               <h2
                 style={{
                   color: colors.dark.success,
@@ -217,13 +221,15 @@ export default function MainPage() {
             style={{ height: "1px" }}
             className="overlaySoft opacity-30  w-full  bg-white mx-auto"
           ></div>
-          <div className="w-full h-full justify-between flex flex-row items-center font-Poppins">
+          <div className="w-full h-full justify-between text-start flex flex-row items-center font-Poppins">
             <div
               style={{ color: colors.dark.secondary }}
               className="gap-2 flex flex-col  "
             >
-              <h2 className="text-xl">Pamukkale University</h2>
-              <h3 className="text-lg text-slate-300">- Denizli / Turkey</h3>
+              <h2 className="text-md md:text-xl">Pamukkale University</h2>
+              <h3 className="text-md  md:text-lg text-slate-300">
+                - Denizli / Turkey
+              </h3>
             </div>
 
             <div className="gap-2 flex my-5 flex-col ">
@@ -249,126 +255,65 @@ export default function MainPage() {
 
       <div
         id="techstack"
-        style={{ textAlign: "center" }}
-        className="w-full h-2/3 bg-mx-auto py-40 bg-black"
+        className="w-full text-center md:h-2/3 bg-mx-auto py-10 md:py-40 bg-black"
       >
         <div
           style={{ lineHeight: "78px" }}
-          className="mx-auto items-center justify-center w-full  text-4xl"
+          className="mx-auto items-center justify-center w-full "
         >
-          <h1 style={{ fontWeight: "700", color: colors.dark.secondary }}>
-            My Tech Stack
-          </h1>
-          <h3 style={{ color: colors.dark.primary }}>
+          <h1 className="text-3xl md:text-4xl text-slate-300">MY TECH STACK</h1>
+          <h3
+            style={{ color: colors.dark.primary }}
+            className="text-2xl md:text-3xl pt-5"
+          >
             Technologies I've been working with recently
           </h3>
         </div>
 
-        <div className="w-2/3  grid grid-cols-9  gap-3 p-5 mt-10  mx-auto relative">
-          <div
-            style={{
-              height: "1px",
-              width: "100%",
-              zIndex: "1",
-              bottom: "-15px",
-            }}
-            className="overlaySoft absolute bg-slate-400 "
-          ></div>
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={html}
-          ></img>
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={git}
-          ></img>
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={tailwind}
-          ></img>
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={css}
-          ></img>
+        <div className=" w-full md:w-2/3 pl-8  grid grid-cols-3 gap-y-5 md:grid-cols-9  md:gap-3 md:p-5 mt-10  mx-auto relative">
+          <img className="w-20 h-20 md:w-28 md:h-28" src={reactNative}></img>
+          <img src={html} className="w-20 h-20 md:w-28 md:h-28"></img>
+          <img className="w-20 h-20 md:w-28 md:h-28" src={git}></img>
+          <img className="w-20 h-20 md:w-28 md:h-28" src={tailwind}></img>
+          <img className="w-20 h-20 md:w-28 md:h-28" src={css}></img>
 
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={js}
-          ></img>
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={react}
-          ></img>
+          <img className="w-20 h-20 md:w-28 md:h-28" src={js}></img>
+          <img className="w-20 h-20 md:w-28 md:h-28" src={react}></img>
 
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={github}
-          ></img>
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={bootstrap}
-          ></img>
-          <img
-            style={{
-              width: "120px",
-              height: "120px",
-            }}
-            src={reactNative}
-          ></img>
+          <img className="w-20 h-20 md:w-28 md:h-28" src={github}></img>
+          <img className="w-20 h-20 md:w-28 md:h-28" src={bootstrap}></img>
         </div>
       </div>
 
-      <div id="projects" className="w-full bg-black pt-30 mx-auto ">
-        <div className="mx-auto mb-16" style={{ lineHeight: "85px" }}>
+      <div
+        id="projects"
+        className="w-full h-full bg-black md:pt-30 p-4 mx-auto text-center justify-center items-center"
+      >
+        <div className="mx-auto  md:mb-16 pb-4">
           <h1
             style={{ color: colors.dark.secondary }}
-            className=" font-semibold text-center text-5xl"
+            className=" font-semibold text-center pb-4 text-3xl md:text-5xl"
           >
             Projects
           </h1>
           <h2
             style={{
               color: colors.dark.primary,
-              textAlign: "center",
-              fontSize: "50px",
             }}
+            className="text-3xl md:text-4xl"
           >
             Things I've built so far
           </h2>
         </div>
 
-        <div className="flex flex-row w-full h-screen  justify-center gap-4 mx-auto">
+        <div className=" w-full items-center   bg-white h-screen justify-center md:gap-4 md:mx-auto">
           <div
             style={{
               boxShadow: "0px 5px 6px 1px rgba(222,222,222,0.7)",
             }}
-            className="w-1/5 cursor-pointer flex flex-col bg-white h-3/5 rounded-3xl overflow-hidden  "
+            className=" w-4/5 h-96 md:w-1/5  cursor-pointer flex flex-col bg-white md:h-3/5 rounded-3xl overflow-hidden  "
           >
-            <div className="w-full h-80 bg-black">
+            <div className="w-full h-60 bg-black ">
               <img
                 src={bg7}
                 alt=""
@@ -379,20 +324,21 @@ export default function MainPage() {
                 }}
               ></img>
             </div>
+            
             <div
               style={{ backgroundColor: colors.dark.gray }}
               className="w-full p-3 h-full justify-center  items-center text-center "
             >
               <h1
                 style={{ color: "black" }}
-                className="pt-4 cursor-pointer text-2xl"
+                className="md:pt-4 cursor-pointer text-md md:text-2xl"
               >
                 {" "}
                 Fenne Design
               </h1>{" "}
               <br />
               <h2
-                className="cursor-pointer"
+                className="cursor-pointer text-sm md:text-lg"
                 style={{ color: colors.dark.primary }}
               >
                 I developed the Fenne Design application with React Native. In
@@ -403,6 +349,7 @@ export default function MainPage() {
               </h2>
             </div>
           </div>
+
           <div
             style={{
               boxShadow: "0px 5px 6px 1px rgba(122,182,222,0.7)",
@@ -442,6 +389,7 @@ export default function MainPage() {
               </h2>
             </div>
           </div>
+
           <div
             style={{
               boxShadow: "0px 5px 6px 1px rgba(222,222,122,0.7)",
@@ -481,6 +429,7 @@ export default function MainPage() {
               </h2>
             </div>
           </div>
+
           <div
             style={{
               boxShadow: "0px 5px 6px 1px rgba(12,222,92,0.5)",
@@ -520,118 +469,6 @@ export default function MainPage() {
               </h2>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div
-        id="contacts"
-        className="w-full bg-black justify-between flex flex-row items-center px-40 p-10 mx-auto"
-      >
-        <div className="text-4xl">
-          <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
-            Tuna Bostancıbaşı
-          </LinearGradient>
-        </div>
-        <div
-          style={{ color: colors.dark.primary }}
-          className="flex flex-row gap-5 justify-center items-center text-xl "
-        >
-          <ul className="flex flex-row gap-5">
-            <li>
-              <a href="#number">+90 538 722 72 58</a>
-            </li>
-            <li>
-              <a href="#email"> tunabstcnx@gmail.com</a>
-            </li>
-          </ul>
-          <ul className="flex flex-row gap-5 ml-10">
-            <li href="#github">
-              <img
-                src={github}
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              ></img>
-            </li>
-            <li href="#twitter">
-              <img
-                src={twitter}
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              ></img>
-            </li>
-            <li href="#linkedin">
-              <img
-                src={linkedin}
-                style={{
-                  width: "40px",
-                  height: "40px",
-                }}
-              ></img>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div
-        style={{
-          backgroundColor: "black",
-          justifyContent: "center",
-          alignItems: "center",
-          width: "100%",
-        }}
-      >
-        <div
-          style={{
-            backgroundColor: colors.dark.primary,
-            width: "83%",
-            alignItems: "center",
-            height: "1px",
-          }}
-          className="mx-auto"
-        ></div>
-      </div>
-      <div
-        style={{ color: colors.dark.primary }}
-        className="w-full justify-between flex flex-row items-center bg-black p-12 px-40 "
-      >
-        <div>
-          <ul className="font-DMSans flex flex-row gap-8 text-2xl">
-            <li>
-              <a href="#home"> Home</a>
-            </li>
-            <li>
-              <a href="#about"> About</a>
-            </li>
-            <li>
-              <a href="#projects"> Projects</a>
-            </li>
-            <li>
-              <a href="#techstack"> TechStack</a>
-            </li>
-            <li>
-              <a href={MoreAbout}> Hobbies</a>
-            </li>
-            <li>
-              <a href="#contacts"> Contacts</a>
-            </li>
-          </ul>
-        </div>
-        <div
-          style={{
-            color: colors.dark.primary,
-            fontSize: "20px",
-          }}
-        >
-          <h1>
-            Designed and built by
-            <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
-              Tuna Bostancıbaşı
-            </LinearGradient>
-          </h1>
         </div>
       </div>
     </div>

@@ -11,9 +11,9 @@ export const Header = () => {
 
 
   return (
-    <div className=" h-40 flex bg-black flex-row-reverse py-5 pl-25 px-20 ">
-      <div className="flex h-full flex-row pr-10  items-center">
-        <ul className="flex flex-row gap-4 pt-6 mr-10 justify-center items-center">
+    <div className=" md:h-40 flex bg-black items-center  flex-row-reverse md:py-5 md:pl-25 md:px-20 ">
+      <div className="flex h-full flex-row md:pr-10  items-center">
+        <ul className="flex flex-row gap-2 p-1 md:gap-4 md:pt-6 md:mr-10 justify-center items-center">
           <li>
             <a href="https://github.com/Tunacodin">
               <img
@@ -44,8 +44,8 @@ export const Header = () => {
                 src={x}
                 alt="x"
                 style={{
-                  width: "28px",
-                  height: "28px",
+                  width: "24px",
+                  height: "20px",
                   backgroundColor: "white",
                   borderRadius: "100%",
                 }}
@@ -55,10 +55,10 @@ export const Header = () => {
         </ul>
       </div>
 
-      <div className="w-2/3 px-20 flex flex-row items-center">
+      <div className="w-2/3 md:px-20 flex flex-row items-center">
         <ul
           style={{ color: colors.dark.primary }}
-          className="flex flex-row pl-44 gap-20  pt-5 text-2xl font-DMSans"
+          className="flex flex-row gap-3 md:pl-44 md:gap-20  md:pt-5 md:text-2xl font-DMSans"
         >
           <li>
             <a href="/">Home</a>
@@ -72,14 +72,13 @@ export const Header = () => {
         </ul>
       </div>
 
-      <div className="w-1/4 items-center justify-center p-2 pt-8 ">
+      <div className="w-1/4 items-center  justify-center p-2 pt-8 ">
         <div style={{ lineHeight: "26px" }}>
           <h1
             style={{
               color: "rgba(110, 122, 253, 1), rgba(21, 221, 10, 1)",
-              fontSize: "38px",
             }}
-            className="text-zinc-300 self-center inline-block "
+            className="text-zinc-300 text-md md:text-4xl self-center inline-block "
           >
             <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
               Tuna
@@ -88,9 +87,8 @@ export const Header = () => {
           <h2
             style={{
               color: "rgba(110, 22, 253, 1), rgba(231, 225, 100, 1)",
-              fontSize: "37px",
             }}
-            className="text-zinc-400"
+            className="text-zinc-400 text-xl md:text-4xl "
           >
             <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
               Bostancıbaşı
