@@ -101,7 +101,7 @@ const Footer = () => {
 
       <div
         style={{ color: colors.dark.primary }}
-        className="w-full justify-between md:flex-row hidden md:visible  items-center bg-black p-12 px-40 "
+        className="w-full justify-between md:flex-row  md:visible  items-center bg-black p-12 px-40 "
       >
         <div>
           <ul className="font-DMSans flex flex-row gap-8 text-2xl">
@@ -125,16 +125,18 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
         <div
           style={{
             color: colors.dark.primary,
             fontSize: "20px",
           }}
+          className='py-4'
         >
           <h1>
-            Designed and built by
+            Designed and built by {""}
             <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
-              Tuna Bostancıbaşı
+               Tuna Bostancıbaşı
             </LinearGradient>
           </h1>
         </div>
