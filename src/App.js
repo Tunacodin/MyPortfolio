@@ -33,7 +33,7 @@ const App = () => {
 
             <Route path="/hobbies" element={<Hobbies />}></Route>
           </Routes>
-        
+        <Footer/>
         </Router>
       </ThemeProvider>
     </MainContext.Provider>

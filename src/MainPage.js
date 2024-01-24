@@ -19,7 +19,9 @@ import bg6 from "./images/bg7.jpg";
 import bg7 from "./images/bg8.jpg";
 import { LinearGradient } from "react-text-gradients";
 import "./App.css";
+import x from "./images/x.png";
 import MoreAbout from "./Text";
+import Footer from "./components/Footer"
 export default function MainPage() {
   return (
     <div
@@ -28,26 +30,23 @@ export default function MainPage() {
         text: colors.dark.primary,
         fontFamily: "Poppins",
       }}
-      className="w-full h-screen md:pt-28  justify-center items-center "
+      className="w-full  md:pt-28  justify-center items-center "
     >
       <div className="container grid grid-cols-1  w-full h-2/4  md:mx-auto md:flex md:flex-row-reverse  justify-evenly">
         <div className="  items-center justify-center  rounded-full">
           <img
             src={profile}
-            style={{
-              width: "340px",
-              height: "340px",
-            }}
-            className="overlaySmall  md:overlay  mx-auto rounded-full mt-10 shadow-2xl  "
+            alt=""
+            className="overlaySmall w-[280px] h-[280px] md:w-[340px] md:h-[340px]   md:overlay  mx-auto rounded-full mt-10 shadow-2xl  "
           ></img>
         </div>
         <div
           style={{ color: colors.dark.secondary, fontFamily: "Poppins" }}
-          className="md:p-10text-2xl xl:text-6xl leading-10 md:mt-16 w-full md:w-3/5"
+          className="md:p-10 text-4xl xl:text-6xl leading-10 md:mt-16 w-full md:w-3/5"
         >
-          <h1 className="text-2xl xl:text-6xl md:leading-10 text-center md:text-start  font-semibold mt-10">
+          <h1 className=" xl:text-6xl md:leading-10 text-center md:text-start  font-semibold mt-10">
             Hi!👋 My name is <br />{" "}
-            <span className="text-2xl md:text-6xl ">
+            <span className=" md:text-6xl ">
               <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
                 Tuna Bostancıbaşı
               </LinearGradient>
@@ -59,9 +58,9 @@ export default function MainPage() {
 
       <div
         id="about"
-        className="w-full text-center md:text-start  flex flex-col md:gap-10 justify-center item-center md:items-start mt-56 md:mt-56 md:pl-52  bg-black"
+        className="w-full text-center md:text-start  flex flex-col md:gap-10 justify-center item-center md:items-start mt-20 md:mt-56 md:pl-52  bg-black"
       >
-        <div className="md:w-3/5 h-full bg-black leading-10 justify-center px-5">
+        <div className="md:w-3/5 h-full bg-black leading-10  justify-center px-5">
           <h1
             style={{ color: colors.dark.secondary }}
             className="font-Poppins text-3xl md:text-5xl font-semibold "
@@ -73,12 +72,12 @@ export default function MainPage() {
             style={{
               color: colors.dark.thirth,
             }}
-            className="w-full font-Poppins we text-xl md:text-2xl my-5"
+            className="md:w-full font-Poppins w-2/3 mx-auto text-xl md:text-2xl my-5"
           >
-            First of all Hello my webpage. Nice to see you here.. <br />I am
-            Tuna Bostancıbaşı and I am currently university student as a
-            computer engineering student in Denizli, Turkey. I am 23 years old.
-            I am develop web and mobile.
+            First of all welcome to my webpage. Nice to see you here.. <br />I
+            am Tuna Bostancıbaşı and currently university student as a computer
+            engineering student in Denizli, Turkey. I am 23 years old and
+            developing web and mobile.
           </p>
         </div>
 
@@ -255,7 +254,7 @@ export default function MainPage() {
 
       <div
         id="techstack"
-        className="w-full text-center md:h-2/3 bg-mx-auto py-10 md:py-40 bg-black"
+        className="w-full justify-center items-center text-center md:h-2/3 mx-auto py-10 md:py-40 bg-black"
       >
         <div
           style={{ lineHeight: "78px" }}
@@ -264,13 +263,13 @@ export default function MainPage() {
           <h1 className="text-3xl md:text-4xl text-slate-300">MY TECH STACK</h1>
           <h3
             style={{ color: colors.dark.primary }}
-            className="text-2xl md:text-3xl pt-5"
+            className="text-2xl md:text-3xl px-2 pt-5"
           >
             Technologies I've been working with recently
           </h3>
         </div>
 
-        <div className=" w-full md:w-2/3 pl-8  grid grid-cols-3 gap-y-5 md:grid-cols-9  md:gap-3 md:p-5 mt-10  mx-auto relative">
+        <div className=" w-full md:w-2/3 pl-12 items-center grid grid-cols-3 gap-y-5  md:grid-cols-9  md:gap-3 md:p-5 mt-10  mx-auto ">
           <img className="w-20 h-20 md:w-28 md:h-28" src={reactNative}></img>
           <img src={html} className="w-20 h-20 md:w-28 md:h-28"></img>
           <img className="w-20 h-20 md:w-28 md:h-28" src={git}></img>
@@ -287,9 +286,9 @@ export default function MainPage() {
 
       <div
         id="projects"
-        className="w-full h-full bg-black md:pt-30 p-4 mx-auto text-center justify-center items-center"
+        className="w-full  bg-black p-4 mx-auto text-center justify-center items-center"
       >
-        <div className="mx-auto  md:mb-16 pb-4">
+        <div className="mx-auto md:p-0 pb-4">
           <h1
             style={{ color: colors.dark.secondary }}
             className=" font-semibold text-center pb-4 text-3xl md:text-5xl"
@@ -306,14 +305,14 @@ export default function MainPage() {
           </h2>
         </div>
 
-        <div className=" w-full items-center   bg-white h-screen justify-center md:gap-4 md:mx-auto">
+        <div className=" w-full  items-center flex flex-col md:flex-row gap-y-5 bg-black md:h-[56rem] justify-center md:gap-x-6 ">
           <div
             style={{
               boxShadow: "0px 5px 6px 1px rgba(222,222,222,0.7)",
             }}
-            className=" w-4/5 h-96 md:w-1/5  cursor-pointer flex flex-col bg-white md:h-3/5 rounded-3xl overflow-hidden  "
+            className=" w-4/5 h-66 md:w-1/5  cursor-pointer flex flex-col bg-white md:h-3/5 rounded-3xl overflow-hidden  "
           >
-            <div className="w-full h-60 bg-black ">
+            <div className="w-full h-62 bg-black ">
               <img
                 src={bg7}
                 alt=""
@@ -324,14 +323,14 @@ export default function MainPage() {
                 }}
               ></img>
             </div>
-            
+
             <div
               style={{ backgroundColor: colors.dark.gray }}
               className="w-full p-3 h-full justify-center  items-center text-center "
             >
               <h1
                 style={{ color: "black" }}
-                className="md:pt-4 cursor-pointer text-md md:text-2xl"
+                className="md:pt-4 cursor-pointer text-2xl"
               >
                 {" "}
                 Fenne Design
@@ -342,10 +341,8 @@ export default function MainPage() {
                 style={{ color: colors.dark.primary }}
               >
                 I developed the Fenne Design application with React Native. In
-                this project, I made an e-commerce application for a company
-                that produces marble products, trays and accessories. The
-                application registration screen includes sections such as
-                product catalogs, order screen, and adding favorite products.{" "}
+                this project, I made an e-commerce application interface for a
+                company that produces marble products, trays and accessories.
               </h2>
             </div>
           </div>
@@ -354,9 +351,9 @@ export default function MainPage() {
             style={{
               boxShadow: "0px 5px 6px 1px rgba(122,182,222,0.7)",
             }}
-            className="w-1/5 flex flex-col bg-white h-3/5 rounded-3xl overflow-hidden "
+            className=" w-4/5 h-66 md:w-1/5  cursor-pointer flex flex-col bg-white md:h-3/5 rounded-3xl overflow-hidden  "
           >
-            <div className="w-full h-80 cursor-pointer bg-black">
+            <div className="w-full h-62 bg-black ">
               <img
                 src={bg5}
                 alt=""
@@ -394,9 +391,9 @@ export default function MainPage() {
             style={{
               boxShadow: "0px 5px 6px 1px rgba(222,222,122,0.7)",
             }}
-            className="w-1/5 flex flex-col bg-white h-3/5 rounded-3xl cursor-pointer overflow-hidden "
+            className=" w-4/5 h-66 md:w-1/5  cursor-pointer flex flex-col bg-white md:h-3/5 rounded-3xl overflow-hidden  "
           >
-            <div className="w-full cursor-pointer h-80 bg-black">
+            <div className="w-full h-62 bg-black ">
               <img
                 src={bg4}
                 alt=""
@@ -434,9 +431,9 @@ export default function MainPage() {
             style={{
               boxShadow: "0px 5px 6px 1px rgba(12,222,92,0.5)",
             }}
-            className="w-1/5 flex flex-col bg-white cursor-pointer h-3/5 rounded-3xl overflow-hidden  "
+            className=" w-4/5 h-66 md:w-1/5  cursor-pointer flex flex-col bg-white md:h-3/5 rounded-3xl overflow-hidden  "
           >
-            <div className="w-full cursor-pointer h-80 bg-black">
+            <div className="w-full h-62 bg-black ">
               <img
                 src={bg3}
                 alt=""
@@ -471,6 +468,7 @@ export default function MainPage() {
           </div>
         </div>
       </div>
+     
     </div>
   );
 }

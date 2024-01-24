@@ -19,10 +19,8 @@ export const BlogCard = ({ data }) => {
 
   return (
     <div
-      className="cardContainer cursor-pointer w-full flex flex-row rounded-2xl shadow-2xl relative overflow-hidden"
+      className="cardContainer md:w-[100%] md:h-[30rem] cursor-pointer w-full h-60 flex flex-row rounded-2xl shadow-2xl relative overflow-hidden"
       style={{
-        width: "30%",
-        height: "30rem",
         backgroundImage: `url(${data.bg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -37,10 +35,9 @@ export const BlogCard = ({ data }) => {
         className="m-3 z-10"
       />
       <button
-             style={{ top: "7px", right: "5px ",width:"70px"  }}
+        style={{ top: "7px", right: "5px ", width: "70px" }}
         className="absolute text-xl text-center bg-white cursor-pointer mr-2 rounded-md z-10 "
       >
-        
         Read
       </button>
 
@@ -60,26 +57,23 @@ export const BlogCard = ({ data }) => {
         }}
       >
         {showFullText ? (
-          <h1
-            style={{ fontSize: "40px",color: "white", cursor: "pointer" }}
-            className="text-white relative  my-24 text-center mx-auto w-full h-full font-DMSans"
-          >
+          <h1 className="text-white relative text-xl md:text-3xl mt-10 md:my-24 text-center mx-auto w-full h-full font-DMSans">
             {data.title}
             <br />
             <br />
-            <h2 className="text-4xl mt-4 cursor-pointer">{data.text}</h2>
+            <h2 className="text-lg md:text-2xl md:mt-4 cursor-pointer">
+              {data.text}
+            </h2>
           </h1>
         ) : (
-          <h1
-            style={{ fontSize: "36px", color: "white" }}
-            className="text-white  p-6 pt-11 cursor-pointer text-center w-full h-full font-DMSans"
-          >
-            
+          <h1 className="text-white text-xl md:text-3xl  md:pt-11 cursor-pointer text-center w-full h-full font-DMSans">
             {data.title}
 
             <br />
             <br />
-            {data.text.substring(0, 100) + "..."}
+            <h2 className="text-lg md:text-2xl md:mt-4 cursor-pointer">
+              {data.text}
+            </h2>
           </h1>
         )}
       </div>

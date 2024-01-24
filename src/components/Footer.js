@@ -26,21 +26,21 @@ const colors = {
 
 const Footer = () => {
   return (
-    <div className="w-full h-full ">
+    <div className="w-full mx-auto ">
       <div
         id="contacts"
-        className="w-full bg-black justify-between flex flex-row items-center px-40 p-10 mx-auto"
+        className="w-full bg-black justify-between gap-4 flex flex-col md:flex-row items-center px-40 p-10 mx-auto"
       >
-        <div className="text-4xl">
+        <div className="text-center text-4xl ">
           <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
             Tuna Bostancıbaşı
           </LinearGradient>
         </div>
         <div
           style={{ color: colors.dark.primary }}
-          className="flex flex-row gap-5 justify-center items-center text-xl "
+          className="flex flex-col md:flex-row gap-5  justify-center items-center text-xl "
         >
-          <ul className="flex flex-row gap-5">
+          <ul className="flex flex-col text-center md:flex-row gap-5">
             <li>
               <a href="#number">+90 538 722 72 58</a>
             </li>
@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="#email"> tunabstcnx@gmail.com</a>
             </li>
           </ul>
-          <ul className="flex flex-row gap-5 ml-10">
+          <ul className="flex flex-row gap-5 md:ml-10">
             <li href="#github">
               <img
                 src={github}
@@ -101,7 +101,7 @@ const Footer = () => {
 
       <div
         style={{ color: colors.dark.primary }}
-        className="w-full justify-between flex flex-row items-center bg-black p-12 px-40 "
+        className="w-full justify-between md:flex-row hidden md:visible  items-center bg-black p-12 px-40 "
       >
         <div>
           <ul className="font-DMSans flex flex-row gap-8 text-2xl">
@@ -118,7 +118,7 @@ const Footer = () => {
               <a href="#techstack"> TechStack</a>
             </li>
             <li>
-              <a href={MoreAbout}> Hobbies</a>
+              <a> Hobbies</a>
             </li>
             <li>
               <a href="#contacts"> Contacts</a>
