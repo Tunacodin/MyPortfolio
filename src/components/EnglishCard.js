@@ -3,9 +3,9 @@ import Englishbg from "../images/eng.jpg";
 
 const EnglishCard = () => {
   return (
-    <div className="w-full h-80 m-10 mx-20 relative  rounded-xl shadow-lg bg-slate-200 hover:shadow-xl">
-      <div className="w-full h-full flex flex-row rounded-xl overflow-hidden">
-        <div className="absolute  overlayV  w-10 h-10 top-36 left-[-98px] bg-white rounded-full z-10"></div>
+    <div className="w-full h-60 md:h-80 md:m-10 md:mx-20 relative  rounded-xl shadow-lg bg-slate-200 hover:shadow-xl">
+      <div className="w-full h-full flex flex-col md:flex-row rounded-xl overflow-hidden">
+        <div className="absolute  overlayV  w-10 h-10 top-36 md:left-[-98px] bg-white rounded-full z-10"></div>
         <div
           style={{
             cursor: "pointer",

@@ -22,7 +22,7 @@ export const BlogCard = ({ data }) => {
       className="cardContainer md:w-[100%] md:h-[30rem] cursor-pointer w-full h-60 flex flex-row rounded-2xl shadow-2xl relative overflow-hidden"
       style={{
         backgroundImage: `url(${data.bg})`,
-        backgroundSize: "cover",
+        backgroundSize:"cover",
         backgroundPosition: "center",
         boxShadow: "0px 1px 15px 3px rgba(155, 150, 110, .5)",
       }}

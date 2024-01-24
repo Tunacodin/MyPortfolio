@@ -8,47 +8,6 @@ import Fitness from "./components/Fitness";
 import Cinema from "./components/Cinema";
 
 export default function Hobbies() {
-  const englishCardRef = useRef(null);
-  const franchCardRef = useRef(null);
-  const pianoRef = useRef(null);
-  const fitnessRef = useRef(null);
-  const cinemaRef = useRef(null);
-
-  const cardRefs = [
-    englishCardRef,
-    franchCardRef,
-    pianoRef,
-    fitnessRef,
-    cinemaRef,
-  ];
-
-  const handleIntersection = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("animate__fadeInUp"); // Add your animation class here
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(handleIntersection, {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5, // Adjust the threshold as needed
-    });
-
-    cardRefs.forEach((ref) => {
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [cardRefs]);
-
   return (
     <div className="w-full h-full bg-black">
       <div className="relative w-4/5 mx-auto h-full py-10 ">
@@ -63,11 +22,11 @@ export default function Hobbies() {
             style={{ width: "2px" }}
             className="overlayV rounded-sm bg-white absolute opacity-40 top-44 h-5/6 bottom-0"
           ></div>
-          <EnglishCard ref={englishCardRef} />
-          <FranchCard ref={franchCardRef} />
-          <Piano ref={pianoRef} />
-          <Fitness ref={fitnessRef} />
-          <Cinema ref={cinemaRef} />
+          <EnglishCard  />
+          <FranchCard />
+          <Piano />
+          <Fitness />
+          <Cinema  />
         </div>
       </div>
     </div>

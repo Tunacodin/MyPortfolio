@@ -104,7 +104,7 @@ export const More = () => {
       <div className="flex w-full flex-col h-full justify-center">
         <div
           style={{ height: "30rem" }}
-          className="w-full shadow-xl shadow-slate-800"
+          className="w-full shadow-xl "
         >
           <img
             src={blog}
@@ -120,7 +120,7 @@ export const More = () => {
         </div>
         <h1
           style={{ color: colors.dark.primary }}
-          className="textContainer text-left font-DMSans font-semibold text-6xl md:pt-10  md:pl-48"
+          className="textContainer  font-DMSans font-semibold text-4xl text-center md:text-start md:text-6xl p-4 md:pt-10  md:pl-48"
         >
           BLOG
         </h1>
@@ -133,16 +133,14 @@ export const More = () => {
             <BlogCard data={interstellarData} />
             <BlogCard data={sinematografiData} />
           </div>
-          <div className="w-full md:w-4/5 p-5 grid grid-cols-2 gap-7 md:px-10  justify-center md:gap-5 items-center shadow-2xl  md:flex-row ">
-            <BlogCard data={kitapData} />
-          </div>
-          <div className="w-full md:w-4/5 p-5 px-10 justify-center gap-5 items-center shadow-2xl shadow-slate-00 flex flex-col md:flex-row ">
+         
+          <div className="w-full md:w-4/5 p-5 grid grid-cols-2 md:grid-cols-4 gap-7 md:px-10  justify-center md:gap-5 items-center shadow-2xl  md:flex-row ">
             <BlogCard data={kitapData} />
             <BlogCard data={tarihData} />
             <BlogCard data={inancData} />
             <BlogCard data={reactNativeData} />
           </div>
-          <div className="w-full md:w-4/5 p-5  px-10   justify-center gap-5 items-center shadow-2xl shadow-slate-00 flex flex-col md:flex-row ">
+          <div className="w-full md:w-4/5 p-5 grid grid-cols-2 md:grid-cols-4 gap-7 md:px-10  justify-center md:gap-5 items-center shadow-2xl  md:flex-row ">
             <BlogCard data={mitolojiData} />
             <BlogCard data={musicData} />
             <BlogCard data={hansZımmerData} />
