@@ -87,6 +87,7 @@ const Footer = () => {
           alignItems: "center",
           width: "100%",
         }}
+      
       >
         <div
           style={{
@@ -101,10 +102,10 @@ const Footer = () => {
 
       <div
         style={{ color: colors.dark.primary }}
-        className="w-full justify-between md:flex-row  md:visible  items-center bg-black p-12 px-40 "
+        className="w-full justify-between md:flex-row    items-center bg-black md:p-12 px-4 md:px-40 "
       >
         <div>
-          <ul className="font-DMSans flex flex-row gap-8 text-2xl">
+          <ul className="font-DMSans hidden md:visible  flex flex-row gap-8 text-2xl">
             <li>
               <a href="#home"> Home</a>
             </li>
@@ -131,12 +132,12 @@ const Footer = () => {
             color: colors.dark.primary,
             fontSize: "20px",
           }}
-          className='py-4'
+          className="py-4 flex hidden md:visible flex-row"
         >
           <h1>
             Designed and built by {""}
             <LinearGradient gradient={["to left", "#17acff ,#ff68f0"]}>
-               Tuna Bostancıbaşı
+              Tuna Bostancıbaşı
             </LinearGradient>
           </h1>
         </div>

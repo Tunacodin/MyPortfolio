@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import App from "./App.css";
 import EnglishCard from "./components/EnglishCard";
-import FranchCard from "./components/FranchCard";
+import FranchCard from "./components/FrenchCard";
 import { Header } from "./components/Header";
 import Piano from "./components/Piano";
 import Fitness from "./components/Fitness";
@@ -10,7 +10,7 @@ import Cinema from "./components/Cinema";
 export default function Hobbies() {
   return (
     <div className="w-full h-full bg-black">
-      <div className="relative w-4/5 mx-auto h-full py-10 ">
+      <div className="relative w-full md:w-4/5 mx-auto h-full py-10 ">
         <div className="relative w-4/5 mx-auto h-full  ">
           <h1
             style={{ color: colors.dark.primary }}
@@ -18,15 +18,19 @@ export default function Hobbies() {
           >
             HOBBIES
           </h1>
+
           <div
             style={{ width: "2px" }}
-            className="overlayV rounded-sm bg-white absolute opacity-40 top-44 h-5/6 bottom-0"
+            className="overlayV hidden md:visible  rounded-sm bg-white absolute opacity-40 top-44 h-5/6 bottom-0"
           ></div>
-          <EnglishCard  />
-          <FranchCard />
-          <Piano />
-          <Fitness />
-          <Cinema  />
+
+          <div className="flex flex-col w-full h-full ">
+            <EnglishCard />
+            <FranchCard />
+            <Piano />
+            <Fitness />
+            <Cinema />
+          </div>
         </div>
       </div>
     </div>
