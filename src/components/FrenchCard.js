@@ -4,9 +4,9 @@ import Frenchbg from "../images/french.png";
 
 const FranchCard = () => {
   return (
-    <div className="w-full h-60 md:h-80 md:m-10 md:mx-20 relative  rounded-xl shadow-lg bg-slate-200 hover:shadow-xl">
+    <div className="w-full h-60 m-2 md:h-96 md:m-10 md:mx-20 relative  rounded-xl shadow-lg bg-slate-200 hover:shadow-xl">
       <div className="w-full h-full flex flex-row rounded-xl overflow-hidden">
-        <div className="absolute  overlayV hidden md:visible  w-10 h-10 top-36 md:left-[-98px] bg-white rounded-full z-10"></div>
+        <div className="absolute  overlayV opacity-0 md:opacity-100  w-10 h-10 top-36 md:left-[-98px] bg-white rounded-full z-10"></div>
         <div className="w-3/5 p-4">
           <h1
             style={{
@@ -16,16 +16,24 @@ const FranchCard = () => {
           >
             LEARNING FRENCH LANGUAGE AND CULTURE
           </h1>
-          <div className="flex flex-col font-Poppins text-[.9rem]">
+          <div className="flex flex-col justify-center items-center font-Poppins text-[.9rem] md:text-xl">
             <p
               style={{
                 cursor: "pointer",
               }}
-              className="py-2"
             >
-              Actually, learning
-              French does not seem to contribute much to my business life, but
-              the French language sounds very aesthetic and relaxing. 
+              <p className="hidden md:visible">
+                 Learning the French language and immersing myself in its rich
+              culture has been a long-standing goal of mine. Similar to my
+              dedication to fitness, I see language learning as a mental workout
+              that enhances both linguistic skills and cognitive abilities.
+              </p>    
+              
+              <p >
+                This section contains articles about many things I wrote in
+                French.
+              </p>
+              
             </p>
           </div>
         </div>

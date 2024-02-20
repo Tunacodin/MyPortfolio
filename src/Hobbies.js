@@ -10,11 +10,11 @@ import Cinema from "./components/Cinema";
 export default function Hobbies() {
   return (
     <div className="w-full h-full bg-black">
-      <div className="relative w-full md:w-4/5 mx-auto h-full py-10 ">
+      <div className="relative w-full md:w-4/5 mx-auto h-full ">
         <div className="relative w-4/5 mx-auto h-full  ">
           <h1
-            style={{ color: colors.dark.primary }}
-            className=" textContainer font-DMSans font-semibold text-6xl pt-20"
+            
+            className="  text-center text-white md:text-left md:pl-20 mx-auto font-DMSans font-semibold text-6xl pt-10"
           >
             HOBBIES
           </h1>

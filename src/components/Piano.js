@@ -4,9 +4,9 @@ import piano from "../images/piano.jpeg";
 
 export default function Piano () {
   return (
-    <div className="w-full h-60 md:h-80 md:m-10 md:mx-20 relative  rounded-xl shadow-lg bg-slate-200 hover:shadow-xl">
+    <div className="w-full h-60 m-2 md:h-96 md:m-10 md:mx-20 relative  rounded-xl shadow-lg bg-slate-200 hover:shadow-xl">
       <div className="w-full h-full flex flex-row rounded-xl overflow-hidden">
-        <div className="absolute  overlayV hidden md:visible  w-10 h-10 top-36 md:left-[-98px] bg-white rounded-full z-10"></div>
+        <div className="absolute  overlayV opacity-0 md:opacity-100  w-10 h-10 top-36 md:left-[-98px] bg-white rounded-full z-10"></div>
         <div
           style={{
             cursor: "pointer",
@@ -38,10 +38,14 @@ export default function Piano () {
                 cursor: "pointer",
               }}
             >
-      
-              I wanted to apply to a few places to study piano, but since they
-              were expensive, I taught myself. Now I can play a few more songs,
-              including Interstellar.
+              <p className="hidden md:visible">
+                I wanted to apply to a few places to study piano, but since they
+                were expensive, I taught myself. Now I can play a few more
+                songs, including Interstellar.
+              </p>
+              <p>
+                This section contains articles about many things I played piano
+              </p>
             </p>
           </div>
         </div>
